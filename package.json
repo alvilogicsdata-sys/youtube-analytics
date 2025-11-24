@@ -1,0 +1,19 @@
+{
+  "name": "youtube-analytics-platform",
+  "version": "1.0.0",
+  "description": "YouTube Analytics Platform - Frontend Application",
+  "main": "nextjs-youtube-frontend/server.js",
+  "scripts": {
+    "dev": "cd nextjs-youtube-frontend && npm run dev",
+    "build": "cd nextjs-youtube-frontend && npm run build",
+    "start": "cd nextjs-youtube-frontend && npm run start",
+    "install": "cd nextjs-youtube-frontend && npm install"
+  },
+  "keywords": ["nextjs", "youtube", "analytics", "dashboard"],
+  "author": "Qwen Code Assistant",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,38 @@
+# DigitalOcean App Platform specification file
+services:
+- name: frontend
+  github:
+    repo: your-github-username/your-repo-name
+    branch: main
+  run_command: npm start
+  environment_slug: node-js
+  source_dir: nextjs-youtube-frontend
+  http_port: 3000
+  routes:
+    - path: /
+  build_command: npm run build
+  run_command: npm start
+  envs:
+    - key: NODE_ENV
+      value: production
+      type: GENERAL
+    - key: NEXT_TELEMETRY_DISABLED
+      value: 1
+      type: GENERAL
+
+- name: backend
+  github:
+    repo: your-github-username/your-repo-name
+    branch: main
+  run_command: npm start
+  environment_slug: node-js
+  source_dir: nodejs-backend
+  http_port: 3001  # or whatever port your backend uses
+  routes:
+    - path: /api  # This would route /api requests to the backend
+  build_command: npm install
+  run_command: npm start
+  envs:
+    - key: NODE_ENV
+      value: production
+      type: GENERAL
