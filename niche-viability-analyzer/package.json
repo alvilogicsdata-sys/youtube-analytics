@@ -1,0 +1,27 @@
+{
+  "name": "niche-viability-analyzer",
+  "version": "1.0.0",
+  "description": "A tool for calculating niche viability scores and revenue estimates for YouTube channels",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "youtube",
+    "analytics",
+    "viability",
+    "revenue",
+    "estimation"
+  ],
+  "author": "Qwen Code Assistant",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  }
+}

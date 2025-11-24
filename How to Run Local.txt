@@ -1,0 +1,42 @@
+  Running the Application Locally
+
+  To run this application on your local machine, you would need to:
+
+   1. Install Required Software:
+      - Node.js (for both backend and frontend)
+      - PostgreSQL database
+      - Redis server
+      - Docker and Docker Compose (for containerized setup)
+
+   2. Set Up the Backend:
+      - Navigate to the youtube-data-api directory
+      - Run npm install to install dependencies
+      - Set up PostgreSQL database with the provided schema
+      - Create a .env file with your YouTube API key and database credentials
+      - Run the server with npm start
+
+   3. Set Up the Frontend:
+      - Navigate to the nextjs-youtube-frontend directory
+      - Run npm install to install dependencies
+      - Run the development server with npm run dev
+
+   4. Alternative: Using Docker:
+      - Navigate to the project root
+      - Create a .env file with all required environment variables
+      - Run docker-compose -f docker-compose.local.yml up --build
+
+  Current Limitation
+
+  Since I've created all the files through the file system, they exist as code but haven't been executed yet.
+  The application would need to be run on your local machine after installing the prerequisites.
+
+  Would you like me to provide detailed step-by-step instructions for setting up and running the application on
+  your local machine? I can guide you through the complete setup process including:
+   - Installing prerequisites (Node.js, PostgreSQL, Redis)
+   - Setting up environment variables
+   - Running both the backend and frontend
+   - Connecting to a YouTube API key
+   - Database setup
+
+  Just let me know which approach you'd prefer, and I'll provide the detailed instructions to get the
+  application running on your local browser.
